@@ -6,9 +6,9 @@ class SlideShowPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
       body: Center(
         child: Slideshow(
+          primaryColor: Color(0xffFF5A7E),
           pontosAcima: false,
           slides: [
             SvgPicture.asset('assets/images/slide-1.svg'),
