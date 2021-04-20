@@ -9,6 +9,7 @@ class SlideShowPage extends StatelessWidget {
       body: Center(
         child: Slideshow(
           primaryColor: Color(0xffFF5A7E),
+          bulletPrimario: 20,
           pontosAcima: false,
           slides: [
             SvgPicture.asset('assets/images/slide-1.svg'),
