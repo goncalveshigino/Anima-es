@@ -220,25 +220,25 @@ class _SliderModel extends ChangeNotifier{
   Color get primaryColor => this._primaryColor;
   set primaryColor( Color color) {
     this._primaryColor =  color;
-    notifyListeners();
+  
   }
 
   Color get secundColor => this._secundColor;
   set secundColor( Color color) {
     this._secundColor = color;
-    notifyListeners();
+
   }
 
   double get bulletPrimario => this._bulletPrimario;
   set bulletPrimario( double tamanho){
     this._bulletPrimario = tamanho;
-    notifyListeners();
+
   }
 
   double get bulletSecundario => this._bulletSecundario;
   set bulletSecundario( double tamanho){
     this._bulletSecundario = tamanho;
-    notifyListeners();
+ 
   }
 
 }
