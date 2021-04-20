@@ -34,7 +34,28 @@ class _PinterestMenuLocation extends StatelessWidget {
           child: Align(
             child: PinterestMenu(
               mostrar: mostrar,
-             
+               items: [
+                 PinterestButton(
+                    icon: Icons.pie_chart,
+                    onPressed: () {
+                      print('Icon pie_chart');
+                  }),
+                  PinterestButton(
+                      icon: Icons.search,
+                      onPressed: () {
+                        print('Search');
+                    }),
+                  PinterestButton(
+                      icon: Icons.notifications,
+                      onPressed: () {
+                        print('notifications');
+                    }),
+                  PinterestButton(
+                      icon: Icons.supervised_user_circle,
+                      onPressed: () {
+                        print('Supervised');
+                    })
+               ],
             ),
           ),
         ));
