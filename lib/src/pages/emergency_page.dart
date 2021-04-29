@@ -1,5 +1,6 @@
 import 'package:animacoes/src/widgets/emergrncy/bottom_gordo.dart';
 import 'package:animacoes/src/widgets/emergrncy/icon_emergency.dart';
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart'; 
 
@@ -38,12 +39,15 @@ class EmergencyPage extends StatelessWidget {
     ];
     
     List<Widget> itemMap = items.map(
-      (item) => BottomGordo(
-        icon: item.icon, 
-        text: item.text, 
-        color1: item.color1,
-        color2: item.color2,
-        onPress: (){ print('Hola'); },
+      (item) => FadeInLeft(
+        duration: Duration( milliseconds: 350),
+        child: BottomGordo(
+          icon: item.icon, 
+          text: item.text, 
+          color1: item.color1,
+          color2: item.color2,
+          onPress: (){ print('Hola'); },
+        ),
       )
     ).toList();
 
@@ -87,7 +91,7 @@ class _Encabezado extends StatelessWidget {
 
         Positioned(
           right: 0, 
-          top: 45,
+          top: 40,
           child: RawMaterialButton(
             onLongPress: (){},
             shape: CircleBorder(),
