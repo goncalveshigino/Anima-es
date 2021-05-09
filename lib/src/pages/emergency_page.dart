@@ -96,6 +96,7 @@ class _Encabezado extends StatelessWidget {
             onLongPress: (){},
             shape: CircleBorder(),
             padding: EdgeInsets.all(15.0),
+            onPressed: () {  },
             child: FaIcon( FontAwesomeIcons.ellipsisV, 
             color: Colors.white
             ),
