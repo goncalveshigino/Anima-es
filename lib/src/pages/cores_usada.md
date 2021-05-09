@@ -2,3 +2,4 @@
 
 * accentColor
 * primaryColorLight
+* scaffoldBackgroundColor
