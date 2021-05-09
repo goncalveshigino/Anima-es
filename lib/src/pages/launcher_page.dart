@@ -82,7 +82,7 @@ class _MenuPrincipal extends StatelessWidget {
 
              ListTile(
                leading: Icon( Icons.lightbulb_outline, color: accentColor),
-               title: Text('Dart Mode'),
+               title: Text('Dark Mode'),
                trailing: Switch.adaptive(
                  value: appTheme.darkTheme, 
                  activeColor: accentColor,
