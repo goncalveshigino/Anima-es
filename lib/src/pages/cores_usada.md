@@ -1,0 +1,4 @@
+# Propriedades usadas
+
+* accentColor
+* primaryColorLight
